@@ -17,7 +17,9 @@ end
 package "sendmail" do
  action :install
 end
-
-package "mailutils" do
- action :install
+case node.platform_family
+  when "debian"
+    package "mailutils" do
+     action :install
+    end
 end

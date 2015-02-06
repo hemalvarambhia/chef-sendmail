@@ -16,3 +16,9 @@ suites:
     run_list:
       - recipe[chef-sendmail::default]
     attributes:
+  - name: centos
+    excludes:
+      - ubuntu-12.04
+    run_list:
+      - recipe[chef-sendmail::default]
+    attributes:
