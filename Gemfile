@@ -13,6 +13,7 @@ gem 'berkshelf'
 #   gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
 #   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
 # end
-
+gem 'chefspec'
 gem 'test-kitchen'
 gem 'kitchen-vagrant'
+gem 'serverspec'
