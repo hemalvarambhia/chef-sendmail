@@ -11,6 +11,8 @@ platforms:
 
 suites:
   - name: default
+    excludes:
+      - centos-6.4
     run_list:
       - recipe[chef-sendmail::default]
     attributes:
